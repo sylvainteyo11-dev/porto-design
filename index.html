@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,17 +17,17 @@
 </head>
 <body class="bg-[#020B1A] text-white overflow-x-hidden">
     <!--barre de naviguation-->
-    <nav class=" flex items-center justify-between md:justify-between">
+    <nav class=" flex items-center justify-between md:justify-between  ">
         <div class="flex w-50 gap-4 ml-4">
             <img src="./assets/images/logo.png" alt="">
             <h1 class="pt-2">SYLVAIN TALLA</h1>
         </div>
         <div class="flex  border-none md:flex md:justify-between md:items-center ">
             <ul class="flex md:flex md:gap-8 mr-12 text-[#B9CACB]">
-                <li class="hidden md:block"><a href="#">Accueil</a></li>
-                <li class="hidden md:block"><a href="#">Skills</a></li>
-                <li class="hidden md:block"><a href="#">Projects</a></li>
-                <li class="hidden md:block"><a href="#">Contact</a></li>
+                <li class="hidden md:block"><a href="#accueil">Accueil</a></li>
+                <li class="hidden md:block"><a href="#skills">Skills</a></li>
+                <li class="hidden md:block"><a href="#projets">Projects</a></li>
+                <li class="hidden md:block"><a href="#contact">Contact</a></li>
                 <li class="flex hidden md:block">
                     <div class="flex">
                         <img src="./assets/images/download.svg" alt="">
@@ -40,7 +40,7 @@
     </nav>
     <!--fin barre de naviguation-->
     <!--debut 1ere section-->
-    <section class="flex-col  mt-15 flex gap-2 md:flex md:gap-2 md:ml-10  ">
+    <section class="flex-col  mt-15 flex gap-2 md:flex md:gap-2 md:ml-10   " id="accueil">
         <div class="flex flex-col justify-center items-center md:flex-row md:justify-between">
             <img src="./assets/images/Overlay+Border.png" alt="" class="">
             <img src="./assets/images/Sylvain Talla Bitmoji.png" alt="" class="rounded-full w-70 mt-15 md:mt-65 md:mr-22">
@@ -50,11 +50,11 @@
             <div class="font-custom" >Sylvain Talla, <h1 class="text-[#00F2FF]">Apprenti Développeur Web & Designer.</h1></div>
             <div class="text-[#B9CACB] ">A passionate developer who loves turning ideas into scalable,<br>beautiful and performant web applications. I bridge the gap<br>between design and technical execution.</>
             <div class="flex justify-center items-center gap-5 mt-5">
-                <div class="rounded-[10px] bg-[#00F2FF] w-40">
-                    <button class="text-[#020B1A]">Voir mes projets</button>
+                <div class="rounded-[10px] bg-[#00F2FF] w-40 hover:bg-blue-500  hover:-translate-y-0.5">
+                    <button class="text-[#020B1A] cursor-pointer  " onclick="window.open('https://github.com/sylvainteyo11-dev?tab=repositories','_blank')">Voir mes projets</button>
                 </div>
-                <div class="rounded-[10px] border w-20 ">
-                    <button class="text-[#B9CACB]">Let's Talk</button>
+                <div class="rounded-[10px] border w-20 hover:bg-blue-500  hover:-translate-y-0.5 ">
+                    <button class="text-[#B9CACB] cursor-pointer">Let's Talk</button>
                 </div>
             </div>
         </div>
@@ -80,7 +80,7 @@
     </section>
     <!--fin 2e section-->
     <!--debut 3e section-->
-    <section class="flex flex-col justify-center items-center mt-20 flex-wrap ">
+    <section id="skills" class="flex flex-col justify-center items-center mt-20 flex-wrap ">
         <div class="mb-10 md:flex ">My Expertise</div>
         <div class="shadow-lg text-[#B9CACB] shadow-black/50 rounded-xl border-white/10 border md:flex md:gap-10 md:w-220 md:h-60 md:justify-center md:items-center ">
             <div><img src="./assets/images/Skill Bars.png" alt="" class=""></div>
@@ -110,7 +110,7 @@
     </section>
     <!--fin 3e section-->
     <!--debut 4e section-->
-    <section class="mt-15">
+    <section class="mt-15" id="projets">
         <div class="flex justify-center md:justify-between items-center">
             <p class="mb-8 md:ml-40">Selected Work</p>
             <p class="hidden text-[#00F2FF] md:block md:mb-8 md:mr-40"><a href="#">View All Projects</a></p>
@@ -123,7 +123,7 @@
     </section>
     <!--fin 4e section-->
     <!--debut section formulaire-->
-    <section class="flex justify-center items-center mt-15 shadow-lg shadow-black/50 rounded-xl border-white/10 border flex flex-wrap md:flex md:gap-25">
+    <section id="contact" class="flex justify-center items-center mt-15 shadow-lg shadow-black/50 rounded-xl border-white/10 border flex flex-wrap md:flex md:gap-25">
         <div>
             <div class="flex justify-center items-center gap-1">
                 <img src="./assets/images/send (1).png" alt="">
@@ -166,8 +166,8 @@
                     <label for=""></label>
                     <input type="text" placeholder="Your Message">
                 </div>
-                <div class="flex justify-center items-center gap-3 rounded-[10px] bg-[#00F2FF] h-10 ">
-                    <button class="text-[#020B1A]">Send Message</button>
+                <div class="flex justify-center items-center gap-3 rounded-[10px] bg-[#00F2FF] h-10 hover:bg-blue-500  hover:-translate-y-0.5 ">
+                    <button class="text-[#020B1A] cursor-pointer ">Send Message</button>
                     <img src="./assets/images/send sombre.png" alt="">
                 </div>
             </form>
